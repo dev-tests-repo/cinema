@@ -1,0 +1,18 @@
+{
+  "name": "cinema",
+  "version": "1.0.0",
+  "scripts": {
+    "watch": "sass assets/scss/index.scss assets/css/index.css --no-source-map --watch",
+    "sass": "sass assets/scss/index.scss assets/css/index.css --no-source-map --style=compressed",
+    "prefix": "postcss assets/css/index.css -u autoprefixer -o assets/css/prefix.css",
+    "build": "npm run watch && npm run prefix",
+    "start": "http-server -c-1 -a localhost -p 8000"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.15",
+    "http-server": "^14.1.1",
+    "postcss": "^8.4.29",
+    "postcss-cli": "^10.1.0",
+    "sass": "^1.66.1"
+  }
+}

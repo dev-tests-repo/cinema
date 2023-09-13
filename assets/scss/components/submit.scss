@@ -1,0 +1,17 @@
+.submit {
+  &__button {
+    padding: 15px 25px;
+    font-size: 16px;
+    line-height: 1;
+    color: $color-white;
+    border-radius: 30px;
+    background: linear-gradient(93.89deg, #003aff 3.85%, #00b9ff 98.81%);
+    background-size: 100% 1px;
+    transition: background-size 0.2s ease;
+    will-change: background-size;
+
+    &:hover {
+      background-size: 600% 1px;
+    }
+  }
+}
